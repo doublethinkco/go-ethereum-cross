@@ -27,15 +27,12 @@ RUN apt-get install -y apt-transport-https
 RUN apt-get update
 RUN apt-get purge lxc-docker*
 RUN apt-cache policy docker-engine # quick check
-#RUN apt-get update
 RUN apt-get install -y docker-engine
 RUN apt-get install -y -q linux-image-extra-$(uname -r) 
 RUN service docker start
 RUN docker run hello-world # quick check
 
-#RUN wget -qO- https://get.docker.com/ | sh
-#RUN service docker start
-
+# add user
 RUN useradd -ms /bin/bash xcompiler
 USER xcompiler
 WORKDIR     /home/xcompiler
