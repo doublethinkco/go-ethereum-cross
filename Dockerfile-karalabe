@@ -24,4 +24,4 @@ RUN \
   ln -s `readlink -f ./build/bin` /build    && \
   \
   echo "Cross compiling Go Ethereum" && \
-  make geth-cross
+  make geth-linux-arm GO=1.5-develop
