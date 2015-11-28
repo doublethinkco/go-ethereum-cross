@@ -20,7 +20,7 @@ Clone this repo and build and run [Dockerfile](https://github.com/doublethinkco/
 
     $ git clone https://github.com/doublethinkco/go-ethereum-cross.git
     $ cd go-ethereum-cross
-    $ sudo docker build -f Dockerfile .
+    $ sudo docker build .
 
 That generates a Docker *image*, which is not the same as a Docker
 *container*.  Docker *images* are immutable binary images, which are
