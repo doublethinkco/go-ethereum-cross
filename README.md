@@ -43,16 +43,15 @@ please speak up!
 Then you can "exit" the "docker run" session, and stop that Docker
 container running.   It has served its purpose.
 
+# Platform status
 
-# High priority issues
+| Platform     | Native        | Cross   |
+| -------------|---------------|---------|
+| Android      | -             | Working |
+| iOS          | -             | Working |
+| Tizen        | -             | [TODO #1](http://github.com/doublethinkco/go-ethereum-cross/issues/1) |
+| Sailfish     | [TODO #4](http://github.com/doublethinkco/go-ethereum-cross/issues/4) | [TODO #2](http://github.com/doublethinkco/go-ethereum-cross/issues/2) |
+| Ubuntu Phone | [TODO #5](http://github.com/doublethinkco/go-ethereum-cross/issues/5) | [TODO #3](http://github.com/doublethinkco/go-ethereum-cross/issues/3) |
 
-* Infrastructure
-    * Add further Dockerfiles for other architectures
-    * Tweak the settings, for more optimal output binaries
-* Geth (go client)
-    * [Test if the buildbot geth binary works on Ubuntu Touch](https://github.com/doublethinkco/webthree-umbrella-cross/issues/22)
-    * [Test if the buildbot geth binary works on Android](https://github.com/doublethinkco/webthree-umbrella-cross/issues/26)
-    * [Test if the buildbot geth binary works on iOS](https://github.com/doublethinkco/webthree-umbrella-cross/issues/27)
-    * Move the above Github issues over to this repo
 
 Copyright (c) 2015 Kitsilano Software Inc
