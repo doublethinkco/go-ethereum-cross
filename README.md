@@ -52,11 +52,11 @@ in many cases, though they are only targeting ARMv5 and armel ABI.
 
 | Platform     | Native        | Cross   | Notes |
 | -------------|---------------|---------|-------|
-| Android      | -             | Working | See [Ethereum on Android](https://github.com/ethereum/go-ethereum/wiki/Ethereum-on-Android) wiki post |
-| iOS          | -             | [Issue #6](http://github.com/doublethinkco/go-ethereum-cross/issues/6) | make geth-ios added Nov 24th.  Bob to test still. |
 | Tizen        | -             | [Issue #1](http://github.com/doublethinkco/go-ethereum-cross/issues/1) | Mainly works.  Bug-fix to be tested on TM1 |
 | Sailfish     | [Issue #4](http://github.com/doublethinkco/go-ethereum-cross/issues/4) | [Issue #2](http://github.com/doublethinkco/go-ethereum-cross/issues/2) |
 | Ubuntu Phone | [Issue #5](http://github.com/doublethinkco/go-ethereum-cross/issues/5) | [Issue #3](http://github.com/doublethinkco/go-ethereum-cross/issues/3) |
+| Android      | -             | Working | See [Ethereum on Android](https://github.com/ethereum/go-ethereum/wiki/Ethereum-on-Android) wiki post |
+| iOS          | -             | [Issue #6](http://github.com/doublethinkco/go-ethereum-cross/issues/6) | make geth-ios added Nov 24th.  Bob to test still. |
 
 
 Copyright (c) 2015 Kitsilano Software Inc
