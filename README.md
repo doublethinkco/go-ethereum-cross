@@ -2,9 +2,10 @@
 
 Repository containing Docker files for cross-compilation of the
 Ethereum go client (geth).  This is trivial, due to Péter Szilágyi's
-excellent work on [xgo](https://github.com/karalabe/xgo/).
+excellent work on [xgo](https://github.com/karalabe/xgo/).  He has
+a Wiki post explaining the process at [Cross-compiling Ethereum](https://github.com/ethereum/go-ethereum/wiki/Cross-compiling-Ethereum).
 
-Used as part of [doublethinkco](http://doublethink.co)'s work
+This Dockerfile is used as part of [doublethinkco](http://doublethink.co)'s work
 to bring Ethereum to mobile/wearable Linux platforms for the benefit
 of the whole Ethereum community, current and future.
 
@@ -43,12 +44,16 @@ please speak up!
 Then you can "exit" the "docker run" session, and stop that Docker
 container running.   It has served its purpose.
 
+The geth development team publish [generic ARM binaries](https://build.ethdev.com/builds/ARM%20Go%20develop%20branch/)
+as part of their automated build process.   In our experience they "just work"
+in many cases, though they are only targeting ARMv5 and armel ABI.
+
 # Platform status
 
-| Platform     | Native        | Cross   |
-| -------------|---------------|---------|
-| Android      | -             | Working |
-| iOS          | -             | Working |
+| Platform     | Native        | Cross   | Notes |
+| -------------|---------------|---------|-------|
+| Android      | -             | Working | See [Ethereum on Android](https://github.com/ethereum/go-ethereum/wiki/Ethereum-on-Android) wiki post |
+| iOS          | -             | [TODO #6](http://github.com/doublethinkco/go-ethereum-cross/issues/6| make geth-ios added Nov 24th.  Bob to test still. |
 | Tizen        | -             | [TODO #1](http://github.com/doublethinkco/go-ethereum-cross/issues/1) |
 | Sailfish     | [TODO #4](http://github.com/doublethinkco/go-ethereum-cross/issues/4) | [TODO #2](http://github.com/doublethinkco/go-ethereum-cross/issues/2) |
 | Ubuntu Phone | [TODO #5](http://github.com/doublethinkco/go-ethereum-cross/issues/5) | [TODO #3](http://github.com/doublethinkco/go-ethereum-cross/issues/3) |
